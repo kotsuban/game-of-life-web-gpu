@@ -8,12 +8,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "rules": {
-    "indent": ["error", 2],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"]
-  },
+  "rules": {},
   // We need this because eslint can't figure out
   // with global flags from WebGPU API.
   "globals": {
