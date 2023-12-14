@@ -1,0 +1,60 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "eslint-config-prettier", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  },
+  // We need this because eslint can't figure out
+  // with global flags from WebGPU API.
+  "globals": {
+    "GPU": "readonly",
+    "GPUAdapter": "readonly",
+    "GPUAdapterInfo": "readonly",
+    "GPUBindGroup": "readonly",
+    "GPUBindGroupLayout": "readonly",
+    "GPUBuffer": "readonly",
+    "GPUCanvasContext": "readonly",
+    "GPUCommandBuffer": "readonly",
+    "GPUCommandEncoder": "readonly",
+    "GPUCompilationInfo": "readonly",
+    "GPUCompilationMessage": "readonly",
+    "GPUComputePassEncoder": "readonly",
+    "GPUComputePipeline": "readonly",
+    "GPUDevice": "readonly",
+    "GPUDeviceLostInfo": "readonly",
+    "GPUError": "readonly",
+    "GPUExternalTexture": "readonly",
+    "GPUInternalError": "readonly",
+    "GPUOutOfMemoryError": "readonly",
+    "GPUPipelineError": "readonly",
+    "GPUPipelineLayout": "readonly",
+    "GPUQuerySet": "readonly",
+    "GPUQueue": "readonly",
+    "GPURenderBundle": "readonly",
+    "GPURenderBundleEncoder": "readonly",
+    "GPURenderPassEncoder": "readonly",
+    "GPURenderPipeline": "readonly",
+    "GPUSampler": "readonly",
+    "GPUShaderModule": "readonly",
+    "GPUSupportedLimits": "readonly",
+    "GPUTexture": "readonly",
+    "GPUTextureView": "readonly",
+    "GPUUncapturedErrorEvent": "readonly",
+    "GPUValidationError": "readonly",
+    "GPUBufferUsage": "readonly",
+    "GPUColorWrite": "readonly",
+    "GPUMapMode": "readonly",
+    "GPUShaderStage": "readonly",
+    "GPUTextureUsage": "readonly"
+  }
+}

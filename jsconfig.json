@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "esnext",
+    "typeRoots": ["./node_modules/@webgpu/types"]
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
